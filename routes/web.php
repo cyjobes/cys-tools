@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/decrypt-postcard', 'PostcardController@prepare_to_decrypt');
+Route::get('/decrypt', 'PostcardController@decrypt');
