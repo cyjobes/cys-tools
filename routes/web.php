@@ -17,3 +17,8 @@ Route::get('/', function () {
 
 Route::get('/decrypt-postcard', 'PostcardController@prepare_to_decrypt');
 Route::get('/decrypt', 'PostcardController@decrypt');
+
+
+Route::get('/readpdf', 'MiscController@get_pdf_text');
+Route::get('/readdocx', 'MiscController@get_docx_text');
+
